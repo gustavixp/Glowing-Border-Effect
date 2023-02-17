@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Glowing Effect Border</title>
+  </head>
+  <body>
+
+    <button class="button glow-effect">
+      Hi There 👋
+      <svg class="glow-container">
+        <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
+        <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
+      </svg>
+    </button>
+
+    <button class="button glow-effect" data-glow-animation="false">
+      Hi There 👋
+      <svg class="glow-container">
+        <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
+        <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
+      </svg>
+    </button>
+
+    <button class="button glow-effect" data-glow-offset="true">
+      Hi There 👋
+      <svg class="glow-container">
+        <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
+        <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
